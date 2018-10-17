@@ -1,0 +1,310 @@
+Interface Design
+	* What is UI dev?
+
+		* Front End Engineers 
+		* make sure things looks the way they're supposed t
+	* What is a designer?
+
+		* UX designers
+
+			* make things work the way they should
+		* UI designers
+
+			* make things look the way they should
+		* Information Architects (IA)
+
+			* create a framework for conveying information to the user
+	* How does a designer think?
+
+		* requirements tend to be about the feels, "soft skills"
+		* waaaaay more abstract than development
+	* What does a designer do? (output)
+
+		* Wireframe (concept)
+		* wireframe (deliverable)
+		* comp (what does it mean??)
+		* code
+	* Who are the people on the team?
+
+		* Developer
+
+			* does core dev stuff
+		* Designer
+
+			* IA, customer reqs, branding, visual design polish
+		* UI developer
+
+			* implements design in a "living" piece of software
+	* Why do we care about design?
+
+		* Goal: have people use your software
+	* Know your user
+
+		* Find out demographics for every project you can
+
+			* deductive reasoning and look at similar apps
+			* what are the differences
+		* Users' goals are your goals
+		* User is first in UX
+		* If you have a client you're building for, know what they like and get feedback
+
+			* your client will be the first user
+	* How to get from raw data to finished product
+
+		* 1. Establish an information architecture using an app map
+		* 2.
+		* 3.
+	* First: make an app map/user flow
+
+		* Find a way of expressing which app features "flow" into others
+		* There will be a beginning, the ore app features, and probably settings
+
+			* beginning is login/splash screen probably
+		* Core app features can flow into each other or exist in parallel as siblings on the same page
+
+			* flow: list of things --> thing detail
+			* parallel: list of games || league standings
+	* Responsiveness
+
+		* Taking one codebase and changing the interface based on changes in the viewing medium
+		* Is it important to your product or is it easier to build two codebases?
+		* Examples:
+
+			* Phone vs tablet vs desktop
+			* Remote input or controller input
+	* Skeuomorphism
+
+		* making things look like what they are in real life
+		* Human frame of reference is the world around them
+		* Provides an easy way for people to translate real life to a digital experience
+		* Can get weird and sloppy if not done properly, or if not timely
+		* Example:
+
+			* notepad app icon is actually a notepad
+
+Information Architecture
+	* IA
+
+		* a way of arranging pieces of interface to convey a message or interaction
+		* similar info is grouped together in chunks, like navigation items or drawing tools
+		* just like a newspaper
+
+			* important stuff at the top "above the fold"
+			* nav between different sections front and center
+	* Wireframes
+
+		* rectangles that build up the skeleton of an interface
+		* can take a lot of forms depending on a developer's need
+
+			* Balsamiq
+			* SketchUp
+			* Pencil and paper
+			* Whiteboard (TAKE PICTURES)
+			* Adobe Illustrator ($$$)
+
+User Interface
+	* A Brief History of Interfaces
+
+		* GUI started becoming mainstream around the 80s with bulletin board systems
+		* GUIs showed a visual and spatial way of navigating around what was otherwise a terminal like environment
+		* Having a graphical interface opened up the doors to expanding computer usage to more people
+		* Revolutionized the design industry by moving more and more digital
+	* Platform Consistency
+
+		* If a platform already has a UI pattern, don't reinvent the wheel!
+
+			* make iOS apps look like iOS apps, make Android apps look Android
+
+Navigation Patterns
+	* Common Nav Patterns: Tabs
+
+		* Android flavor tabs usually go on the top of the page
+
+			* New Android update includes bottom tabs
+		* iOS flavor tabs usually  go on the bottom
+		* Why use tabs?
+
+			* present two or more sets of info in parallel
+			* make it easy to switch to sibling tasks
+	* Hamburger Menu
+
+		* Usually have three lines to indicate more content is hidden in a nav menu
+		* usually opens a side drawer to expose navigation options
+		* Why use them?
+
+			* When there are more options that can fit comfortably in an array of nav tabs
+			* When primary app function is center stage but the secondary functions need to be easily accessible
+
+ UI Patterns
+	* List pickers/Spinners
+
+		* allow an app to show options and choose them in a way that's hidden in the rest of the UI
+		* essentially a dropdown menu
+		* Why use them?
+
+			* solves "where do the options go?" in a system-appropriate way
+	* Swiping
+
+		* action that triggers event by swiping one way across a screen, or its opposite
+		* Why do we swipe?
+
+			* Android: shortcut for an action or its opposite
+
+				* swipe left/right to reject/accept matches on Tinder
+				* swipe left/right to archive/delete emails in Gmail
+	* Floating Button
+
+		* almost always a circular button transposed over the main content body
+		* usability note: button should be configurable to float on right or left side of the screen for left or right handed users
+		* When do we use?
+
+			* App has one primary function
+
+				* ex: evernote floating button allows users to create a note
+			* floating buttons sometimes use radial submenus to show related functions
+			* make more room for other stuff on screen
+
+Design (yes you have to think of colors and shapes)
+	* Color Theory really quick
+
+		* Primary colors: Red , Yellow, Blue
+		* Secondary: Orange, Purple, Green
+		* Tone is underlying warmth/coolness (sides of the wheel)
+		* Colors represent different emotion in different cultures
+
+			* red = stop
+			* green = go
+			* etc
+	* How to use color
+
+		* pick a primary color and use for big accents
+		* pick its complementary secondary color and use for small accents
+		* use black, white, and ONE shade of gray for major UI elements
+		* If all else fails grab colors from sports teams as a starting point
+	* Visual Hierarchy
+
+		* Primary patterns: color, size, and placement
+		* Newspaper model
+
+			* put the interesting shit where the user can see it at first glance
+			* at the TOP
+			* No more than 3 sizes of headline is a guideline
+		* Secondary patterns: gradients, drop shadows, animations
+		* Secondary patterns reflect things in real life
+
+			* Nothing glides smoothly in real life
+			* everything on one plane has a primary light source and has a shadow related to that light source
+			* most things that appear to be a solid color actually have slight color differences in different areas
+			* use these effects to create depth and breathe life into your app
+
+Production Design
+	* Platform requirements
+
+		* After you have a design, look at the platform asset requirements from an engineering standpoint
+
+			* does your design accommodate different screen sizes? If so, do you need different asset sizes?
+			* Do you need different assets for different situations?
+
+				* pushed states for buttons
+				* disabled states for things
+			* Do you need app icons or platform-level assets? RTFM to find out if you do and what those requirements are
+		* Make a list of different sizes and modalities for sanity's sake
+		* What kind of animations are available?
+	* Types of assets
+
+		* JPEG
+
+			* small size
+			* no alpha channels (transparency)
+		* PNG
+
+			* mid- or large-sized, depending on bit depth
+			* alpha channels
+		* SVG
+
+			* can only be used in certain situations on different platforms
+			* flexible size and colors
+			* usually tiny
+			* SVGs are fucking magic
+
+				* they're xml that tells a computer how to draw and fill a shape - perfect for cs nerds
+				* great for responsiveness because they grow or shrink
+				* they're stored in plaintext, so they're stupid small
+	* Ways to make assets, baller edition
+
+		* Photoshop
+
+			* great for manip, adv effects
+			* most assets don't scale up or down well unless they are SVG
+			* has macros/scripts to generate assets of different sizes
+		* Illustrator/Sketch (mac)
+
+			* SVG drawing tool
+			* Has some macros available, exports SVG XML
+		* (look up other SVG tools)
+		* Free shit
+
+			* MS Paint
+
+				* no alphas
+			* GIMP
+			* Inkscape
+
+				* lets you edit fonts!
+			* Photoshop:Illustrator::GIMP:Inkscape
+
+				* OS software is good, but can be difficult to understand
+	* Animations
+
+		* skeuomorphic ways of showing how to interact with software
+		* typically based on how a user would interact with a physical object in space
+		* Conveys meaning and polish
+
+			* basic linear movement shows movement
+			* loading animations show what's happening behind the scenes
+			* adding an on tap color change to a background or button confirms the user's action
+			* long tap for Android or swipe for iOS can trigger options about the object
+			* Animations should play nicely with interactions
+
+Keys to Success
+	* Be consistent
+
+		* Don't change things for the user
+		* Users learn how to interact with an app and this understanding increases efficiency
+
+			* if you introduce two different UI patterns to do the same thing, users will feel lost
+	* Provide feedback
+
+		* Visual
+
+			* user should know if an action is right or wrong
+			* inform users of changes
+			* inform users of loading, processing, etc., no "radio silence"
+		* Other
+
+			* haptic feedback
+			* audio feedback
+	* Be forgiving
+
+		* user should never fall into a situation they can't back out of
+		* there should be clear feedback for how to undo changes
+		* if the user errs, use it as a teaching moment to show them how to do it correctly and prevent the error from occurring again
+
+			* Personal philosophy: 99% of the time, if your product needs a tutorial, your UI sucks
+	* Keep improving
+
+		* If your first iteration doesn't work, keep on going
+
+			* find out why somethings doesn't work
+			* take the opportunity to gather feedback, even if it's informal
+		* vNext is a great time to make refinements
+
+			* vNext is next version, btw
+	* Reading
+
+		* Don't Make Me Think: A Common Sense Approach to Web Usability, Steve Krug
+		* material.io/  cool Material Design Google shit
+		* pttrns.com/  UX nerdery
+		* thenounproject.com  open source icons
+
+cheryl.macdonald@bamtechmedia.com
